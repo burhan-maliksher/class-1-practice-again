@@ -27,7 +27,7 @@ jobs:
       - name: intalling node
         uses: actions/setup-node@v2-beta
         with:
-             node-version:16.13.0
+             node-veresion:16.13.0
 
       # Runs a set of commands using the runners shell
       - name: installing surge
