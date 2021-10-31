@@ -6,7 +6,7 @@ name: class-1-practice-again
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [ main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -33,5 +33,5 @@ jobs:
       - name: installing surge
         run: npm install --global surge
         
-      -name:deploying using surge   
+      -name: deploying using surge   
        run: surge ./ attempt-2-class-1.surge.sh --token ${{secrets.SURGE_TOKEN}}
